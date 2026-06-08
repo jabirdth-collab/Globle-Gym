@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-neon-yellow: #caea10;
+  --color-neon-yellow-hover: #aec90d;
+  --color-obsidian-900: #070709;
+  --color-obsidian-800: #0f1015;
+  --color-obsidian-700: #1b1c23;
+  --color-obsidian-600: #2a2c37;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-obsidian-900 text-slate-100 font-sans antialiased selection:bg-neon-yellow selection:text-obsidian-900;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070709;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1c23;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #caea10;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Global Gym",
+  "description": "Professional website design for Global Gym with dynamic biometric calculators, interactive membership customizers, weekly timetables, and a static-deployable local lead management CRM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
